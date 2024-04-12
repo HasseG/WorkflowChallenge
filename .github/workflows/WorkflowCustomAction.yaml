@@ -1,10 +1,10 @@
 name: artifact
 on: push
 jobs:
-    job1:
-        name: Job to call action
+    main:
         runs-on: ubuntu-latest
         steps:
-          - name: Action call
-            uses: HasseG/CustomActionChallenge@main 
+            - uses: actions/checkout@v4
+            - uses: HasseG/CustomActionChallenge@main 
+            
 
